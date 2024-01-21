@@ -15,3 +15,10 @@
 8 시간 범위에 대한 애니메이션
 '''
 
+a = 5
+
+#1 엑셀 불러오기
+import pandas as pd
+df = pd.read_excel('C:/Users/user/PycharmProjects/heat_pump_analyze/HYN35_LOG (20231019 04_2 HOUR).xlsx')
+print(df.head)
+
