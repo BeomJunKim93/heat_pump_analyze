@@ -13,3 +13,5 @@
 # 4) 창 좌상단의 + 눌러서 모듈 검색
 # 5) 모듈 클릭 후 'install package' 눌러서 설치
 
+# 깃허브 연동
+# VCS -> Share project on Github
