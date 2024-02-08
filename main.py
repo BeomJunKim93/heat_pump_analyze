@@ -58,3 +58,6 @@ import numpy as np
 #             print("입력좀 잘 해 :(")
 #             continue
 
+# 중간에 코드 진행 한번 끊고 디버깅 하는 용도
+# print()
+# raise IOError
