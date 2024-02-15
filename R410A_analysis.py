@@ -124,7 +124,6 @@ h_valve_o = h_valve_i
 T_valve_o = T_ev_sat
 s_valve_o = s4
 # print(s_valve_o)
-raise IOError
 
 "state 5 : evaporator return"
 T_ev_i = T_valve_o
@@ -132,5 +131,25 @@ p_ev_i = p_valve_o
 h_ev_i = h_valve_o
 s_ev_i = s_valve_o
 
+# name :
+# 1 : evap_o
+# 2 : evap_sh
+# 3 : comp_i
+# 4 : comp_o
+# 5 : cond_i
+# 6 : cond_o
+# 7 : cond_sc
+# 8 : valve_i
+# 9 : valve_o
+# 10 : evap_i
+# 11 : 1
 
+df = pd.DataFrame({'point':['evap_o', 'evap_sh', 'comp_i', 'comp_o', 'cond_i', 'cond_o', 'cond_sc', 'valve_i','valve_o','evap_i','evap_o'],
+                   'T':[T_ev_o,T_ev_spheat,T_comp_i,T_comp_o_ideal,T_cd_i,T_cd_o,T_cd_sbcool,T_valve_i,T_valve_o,T_ev_i,T_ev_o],})
+
+print(df)
+
+student_card = pd.DataFrame({'ID':[20190103, 20190222, 20190531],
+                             'name':['Kim', 'Lee', 'Jeong'],
+                             'class':['H', 'W', 'S']})
 
