@@ -3,6 +3,7 @@
 #R410A : 'HEOS::R32[0.697615]&R125[0.302385]'
 import CoolProp.CoolProp as CP # Calling REFPROP
 import scipy
+import pandas as pd
 
 T_k = 273
 
@@ -145,11 +146,11 @@ s_ev_i = s_valve_o
 # 11 : 1
 
 df = pd.DataFrame({'point':['evap_o', 'evap_sh', 'comp_i', 'comp_o', 'cond_i', 'cond_o', 'cond_sc', 'valve_i','valve_o','evap_i','evap_o'],
-                   'T':[T_ev_o,T_ev_spheat,T_comp_i,T_comp_o_ideal,T_cd_i,T_cd_o,T_cd_sbcool,T_valve_i,T_valve_o,T_ev_i,T_ev_o],})
+                   'T':[T_ev_o-T_k,T_ev_spheat-T_k,T_comp_i-T_k,T_comp_o_ideal-T_k,T_cd_i-T_k,T_cd_o-T_k,T_cd_sbcool-T_k,T_valve_i-T_k,T_valve_o,T_ev_i,T_ev_o-T_k],
+                   'P':[p_ev_o*10,p_ev_spheat*10,p_comp_i*10,p_comp_o*10,p_cd_i*10,p_cd_o*10,p_cd_sbcool*10,p_valve_i*10,p_valve_o*10,p_ev_i*10,p_ev_o*10],
+                   'h':[h_ev_o,h_ev_spheat,h_comp_i,h_comp_o,h_cd_i,h_cd_o,h_cd_sbcool,h_valve_i,h_valve_o,h_ev_i,h_ev_o],
+                   'h':[s_ev_o,s_ev_spheat,s_comp_i,s_comp_o,s_cd_i,s_cd_o,s_cd_sbcool,s_valve_i,s_valve_o,s_ev_i,s_ev_o]})
 
 print(df)
 
-student_card = pd.DataFrame({'ID':[20190103, 20190222, 20190531],
-                             'name':['Kim', 'Lee', 'Jeong'],
-                             'class':['H', 'W', 'S']})
 

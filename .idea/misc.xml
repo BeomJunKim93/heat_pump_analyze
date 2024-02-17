@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.9 (heat_pump_analyze)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (heat_pump_analyze)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (heat_pump_analyze)" project-jdk-type="Python SDK" />
 </project>

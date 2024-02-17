@@ -37,7 +37,6 @@ from matplotlib import pyplot as plt
 from CoolProp import CoolProp as CP
 from CoolProp.Plots import PropertyPlot as CPP  # StateContainer
 from CoolProp.Plots import SimpleCompressionCycle as CPPSCC
-
 import matplotlib.transforms as mtransforms
 
 TT = ([[55, 55, 55, 55, 55],
