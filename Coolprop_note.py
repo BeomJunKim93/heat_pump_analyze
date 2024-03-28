@@ -17,21 +17,25 @@ from CoolProp.CoolProp import PropsSI # 공기를 제외한 유체
 
 #R410A 물성치 계산
 #R410A : 'HEOS::R32[0.697615]&R125[0.302385]'
-import CoolProp.CoolProp as CP # Calling REFPROP
-rho_R410A = CP.PropsSI('D','T',300,'P',101325,'HEOS::R32[0.697615]&R125[0.302385]')
-print(rho_R410A)
-h_R410A = CP.PropsSI('H','T',300,'P',101325,'HEOS::R32[0.697615]&R125[0.302385]')
-h_R410A_2 = CP.PropsSI('H','T',300,'P',200000,'HEOS::R32[0.697615]&R125[0.302385]')
-h_R410A_3 = CP.PropsSI('H','T',300,'Q',1,'HEOS::R32[0.697615]&R125[0.302385]')
-h_R410A_4 = CP.PropsSI('H','T',330,'Q',1,'HEOS::R32[0.697615]&R125[0.302385]')
-h_R410A_4_1 = CP.PropsSI('H','T',330,'Q',0,'HEOS::R32[0.697615]&R125[0.302385]')
-h_R410A_5 = CP.PropsSI('H','T',338,'Q',1,'HEOS::R32[0.697615]&R125[0.302385]')
-print(h_R410A)
-print(h_R410A_2)
-print(h_R410A_3)
-print(h_R410A_4)
-print(h_R410A_4_1)
-print(h_R410A_5)
+# import CoolProp.CoolProp as CP # Calling REFPROP
+from CoolProp.CoolProp import PropsSI
+# rho_R410A = CP.PropsSI('D','T',300,'P',101325,'HEOS::R32[0.697615]&R125[0.302385]')
+# # print(rho_R410A)
+# h_R410A = CP.PropsSI('H','T',300,'P',101325,'HEOS::R32[0.697615]&R125[0.302385]')
+# h_R410A_2 = CP.PropsSI('H','T',300,'P',200000,'HEOS::R32[0.697615]&R125[0.302385]')
+# h_R410A_3 = CP.PropsSI('H','T',300,'Q',1,'HEOS::R32[0.697615]&R125[0.302385]')
+# h_R410A_4 = CP.PropsSI('H','T',330,'Q',1,'HEOS::R32[0.697615]&R125[0.302385]')
+# h_R410A_4_1 = CP.PropsSI('H','T',330,'Q',0,'HEOS::R32[0.697615]&R125[0.302385]')
+# h_R410A_5 = CP.PropsSI('H','T',338,'Q',1,'HEOS::R32[0.697615]&R125[0.302385]')
+# # print(h_R410A)
+# print(h_R410A_2)
+# print(h_R410A_3)
+# print(h_R410A_4)
+# print(h_R410A_4_1)
+# print(h_R410A_5)
+
+h_R134a = PropsSI('H','T',273.15,'Q', 0,'R134a')
+print(h_R134a)
 
 
 
