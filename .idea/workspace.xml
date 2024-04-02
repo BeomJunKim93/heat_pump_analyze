@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49a83efe-f182-473d-af9b-a1e55302737a" name="Changes" comment="Coolprop_note study_240401">
-      <change afterPath="$PROJECT_DIR$/KICT_cascadeHP_ver4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
+    <list default="true" id="49a83efe-f182-473d-af9b-a1e55302737a" name="Changes" comment="Coolprop_note study_240402">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KICT_cascadeHP_ver3.py" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_cascadeHP_ver3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KICT_cascadeHP_ver4.py" beforeDir="false" afterPath="$PROJECT_DIR$/KICT_cascadeHP_ver4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +258,8 @@
       <workItem from="1711634620951" duration="394000" />
       <workItem from="1711681595593" duration="2586000" />
       <workItem from="1711702398109" duration="1424000" />
-      <workItem from="1711964713953" duration="7637000" />
+      <workItem from="1711964713953" duration="7691000" />
+      <workItem from="1711988120332" duration="10856000" />
     </task>
     <task id="LOCAL-00001" summary="깃허브 연동 방법 업데이트">
       <created>1705811235532</created>
@@ -324,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711964741034</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Coolprop_note study_240402">
+      <option name="closed" value="true" />
+      <created>1711987788960</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711987788960</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,10 +343,11 @@
     <MESSAGE value="Coolprop_note study 1" />
     <MESSAGE value="Coolprop_note study_240328" />
     <MESSAGE value="Coolprop_note study_240401" />
-    <option name="LAST_COMMIT_MESSAGE" value="Coolprop_note study_240401" />
+    <MESSAGE value="Coolprop_note study_240402" />
+    <option name="LAST_COMMIT_MESSAGE" value="Coolprop_note study_240402" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/heat_pump_analyze$KICT_cascadeHP_ver4.coverage" NAME="KICT_cascadeHP_ver4 Coverage Results" MODIFIED="1711973600852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/heat_pump_analyze$KICT_cascadeHP_ver4.coverage" NAME="KICT_cascadeHP_ver4 Coverage Results" MODIFIED="1712019189939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/heat_pump_analyze$KICT_cascadeHP.coverage" NAME="KICT_cascadeHP Coverage Results" MODIFIED="1711546147554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/heat_pump_analyze$scratch_2.coverage" NAME="scratch_2 Coverage Results" MODIFIED="1707094317529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/heat_pump_analyze$functions.coverage" NAME="functions Coverage Results" MODIFIED="1711973239430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
