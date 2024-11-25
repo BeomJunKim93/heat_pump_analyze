@@ -38,22 +38,20 @@ from CoolProp import CoolProp as CP
 from CoolProp.Plots import PropertyPlot as CPP  # StateContainer
 from CoolProp.Plots import SimpleCompressionCycle as CPPSCC
 import matplotlib.transforms as mtransforms
-# import CoolProp.CoolProp as CP # Calling REFPROP
-import scipy
 
-TT = ([[50, 51, 52, 53, 54],    # condenser temperature
-       [30, 31, 32, 33, 34]])   # evaporator temperature
+TT = ([[55, 55, 55, 55, 55],
+       [33, 34, 35, 36, 37]])
 
 n = size(TT)[1]
 
 for i in range(size(TT)[1]):
-    pp = CPP("R410A", "PH", unit_system="KSI")
-    # pp.title("R410A log p-h Diagramm_"+str(i))
+    pp = CPP("R32", "PH", unit_system="KSI")
+    # pp.title("R32 log p-h Diagramm_"+str(i))
     pp.set_axis_limits([-40, 700, 0, 15000])
     pp.xlabel("h [kJ/kg]")
     pp.ylabel("P [kPa]")
     pp.calc_isolines(CP.iQ, num=11)
-    cycle = CPPSCC("R410A", "PH", unit_system="KSI")
+    cycle = CPPSCC("R32", "PH", unit_system="KSI")
     T0 = TT[1][i] + 273.15
     pp.state.update(CP.QT_INPUTS, 0.0, T0 - 0.02)
     p0 = pp.state.keyed_output(CP.iP)
@@ -63,7 +61,7 @@ for i in range(size(TT)[1]):
     pp.calc_isolines(CP.iT, [T0, T2], num=2)
     pp.props[CP.iT]['color'] = 'green'
     pp.props[CP.iT]['lw'] = '0.5'
-    pp.title("R410A log p-h Diagramm ")
+    pp.title("R32 log p-h Diagramm ")
 
     cycle.simple_solve(T0, p0, T2, p2, 0.7, SI=True)
     cycle.steps = 50
@@ -81,14 +79,14 @@ for i in range(size(TT)[1]):
     # label 1
     T0 = cycle._cycle_states[0, "T"]
     pa = 0.996424  # Pressure value selected to place the labels
-    h = CP.PropsSI("H", "P", pa, "T", T0, "R410A") / 1000
+    h = CP.PropsSI("H", "P", pa, "T", T0, "R32") / 1000
     lb1 = "{:.2f}K".format(T0)
     ax.text(h, pa, lb1, fontsize=10, rotation=90, color='r', transform=trans_offset, horizontalalignment='left',
             verticalalignment='baseline')
     # label 2
     T2 = cycle._cycle_states[2, "T"]
     pa = 0.996424  ##Pressure value selected to place the labels
-    h = CP.PropsSI("H", "P", pa, "T", T2, "R410A") / 1000
+    h = CP.PropsSI("H", "P", pa, "T", T2, "R32") / 1000
     lb2 = "{:.2f}K".format(T2)
     ax.text(h, pa, lb2, fontsize=10, rotation=90, color='r', transform=trans_offset, horizontalalignment='left',
             verticalalignment='baseline')
